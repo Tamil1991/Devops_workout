@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<title>
+Jenkins
+</title>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+<meta content='Jenkins – an open source automation server which enables developers around the world to reliably build, test, and deploy their software' name='description'>
+<meta charset='utf-8'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<meta content='ie=edge' http-equiv='x-ua-compatible'>
+<link href='https://www.jenkins.io/' rel='canonical'>
+<!-- Favicons -->
+<link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+<link href='/apple-touch-icon.png' rel='apple-touch-icon' sizes='180x180'>
+<link href='/favicon-32x32.png' rel='icon' sizes='32x32' type='image/png'>
+<link href='/favicon-16x16.png' rel='icon' sizes='16x16' type='image/png'>
+<link href='/site.webmanifest' rel='manifest'>
+<link color='#5bbad5' href='/safari-pinned-tab.svg' rel='mask-icon'>
+<meta content='#2b5797' name='msapplication-TileColor'>
+<meta content='#ffffff' name='theme-color'>
+<meta content='Jenkins' name='apple-mobile-web-app-title'>
+<!-- Twitter Card data -->
+<meta content='summary_large_image' name='twitter:card'>
+<meta content='@JenkinsCI' name='twitter:site'>
+<meta content='Jenkins' name='twitter:title'>
+<meta content='Jenkins – an open source automation server which enables developers around the world to reliably build, test, and deploy their software' name='twitter:description'>
+<meta content='@JenkinsCI' name='twitter:creator'>
+<!-- Twitter Summary card images must be at least 120x120px -->
+<meta content='/images/logo-title-opengraph.png' name='twitter:image'>
+<!-- Open Graph data -->
+<meta content='Jenkins' property='og:title'>
+<meta content='article' property='og:type'>
+<meta content='https://www.jenkins.io/' property='og:url'>
+<meta content='Jenkins – an open source automation server which enables developers around the world to reliably build, test, and deploy their software' property='og:description'>
+<meta content='Jenkins' property='og:site_name'>
+<meta content='/images/logo-title-opengraph.png' property='og:image'>
+<link href='/assets/bower/bootstrap/css/bootstrap.min.css' media='screen' rel='stylesheet'>
+<link href='/css/jenkins.css' media='screen' rel='stylesheet'>
+<link href='/css/copy-to-clipboard.css' media='screen' rel='stylesheet'>
+<link href='/stylesheets/styles.css' media='screen' rel='stylesheet'>
+<!-- Non-obtrusive CSS styles -->
+<link href='/css/footer.css' media='screen' rel='stylesheet'>
+<link href='/css/font-awesome.min.css' media='screen' rel='stylesheet'>
+<link href='https://cdn.jsdelivr.net/npm/@docsearch/css@3' rel='stylesheet'>
+</head>
+<body>
+<script src='/assets/bower/jquery/jquery.min.js'></script>
+<script src='/js/copy-to-clipboard.js'></script>
+<jio-navbar class='fixed-nav' id='ji-toolbar' property='https://www.jenkins.io' showSearchBox></jio-navbar>
+
+<div class='banner-container'>
+<div class='skew'></div>
+<div class='container'>
+<div class='row'>
+&nbsp;
+</div>
+<div class='row'>
+<div class='col-md-1 col-lg-2'></div>
+<div class='col-md-5 col-lg-4'>
+<img src='/index_files/Jenkins-stop-the-war.svg' style='width: 356px;'>
+</div>
+<div class='col-md-5 col-lg-4'>
+<h1 class='page-title'><span>
+Jenkins
+</span></h1>
+<p>
+<strong>
+Build great things at any scale
+</strong>
+</p>
+<p>
+The leading open source automation server, Jenkins provides
+hundreds of plugins to support building, deploying and automating
+any project.
+</p>
+<p>
+<img src='https://s.w.org/images/core/emoji/13.1.0/svg/1f1fa-1f1e6.svg' style='width: 20px;'>
+We stand with the people of Ukraine.
+Please assist humanitarian efforts for the Ukrainian people and
+those affected by the military invasion of Ukraine by supporting
+international aid organizations, including the
+<a href='https://redcross.org.ua/en/donate/'>
+Ukrainian Red Cross
+</a>
+</p>
+<div class='mb-2'>
+<a class='btn btn-secondary m-1' href='/doc/'>
+Documentation
+</a>
+<a class='btn btn-primary m-1' href='/download/'>
+Download
+</a>
+</div>
+</div>
+<div class='col-md-1 col-lg-2'></div>
+</div>
+</div>
+</div>
+
+<style>
+  .carousel_459 {
+    --color: white;
+    background-size: cover !important;
+  }
+  .carousel_459 a {
+    color: var(--color);
+    text-decoration: none !important;
+  }
+  .carousel_459 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #ProjectCarousel_459 {
+    background: #000000 url(/images/cdf/cdf-background-wide.jpg) no-repeat center;
+  }
+</style>
+<div class='carousel slide carousel_459' data-bs-ride='carousel' id='ProjectCarousel_459'>
+<div class='container'>
+<div class='carousel-indicators'>
+<button class='active' data-bs-slide-to='0' data-bs-target='#ProjectCarousel_459'></button>
+<button data-bs-slide-to='1' data-bs-target='#ProjectCarousel_459'></button>
+<button data-bs-slide-to='2' data-bs-target='#ProjectCarousel_459'></button>
+<button data-bs-slide-to='3' data-bs-target='#ProjectCarousel_459'></button>
+<button data-bs-slide-to='4' data-bs-target='#ProjectCarousel_459'></button>
+</div>
+<div class='carousel-inner carousel_459'>
+<div class='carousel-item carousel_459 active' style='background: rgba(0,0,0,0);'>
+<div class='container'>
+<div class='row mt-5 mb-5'>
+<div class='col-md-12 col-lg-8 order-first order-lg-last'>
+<a href='/blog/2024/02/23/gsoc2024-announcement/'>
+<img role='presentation' src='/images/gsoc/2024/GSoC2024-here-we-come.png' style='height: 320px;'>
+</a>
+</div>
+<div class='col-md-12 col-lg-4 order-last order-lg-first'>
+<a href='/blog/2024/02/23/gsoc2024-announcement/'>
+<h2>
+Accepted for GSoC 2024!
+</h2>
+<p>
+We are happy to announce that the Jenkins project has been accepted as a Google Summer of Code (GSoC) 2024 Mentoring Organisation.
+</p>
+</a>
+<div>
+<a class='btn btn-primary' href='/blog/2024/02/23/gsoc2024-announcement/'>
+More info
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='carousel-item carousel_459' style='background: rgba(0,0,0,0);'>
+<div class='container'>
+<div class='row mt-5 mb-5'>
+<div class='col-md-12 col-lg-8 order-first order-lg-last'>
+<a href='https://devopsdozen.com/devops-dozen-2023-community-award-winners/'>
+<img role='presentation' src='/images/post-images/2024/9_Most_Innovative_DevOps_Open_Source_Project.png' style='height: 285px;'>
+</a>
+</div>
+<div class='col-md-12 col-lg-4 order-last order-lg-first'>
+<a href='https://devopsdozen.com/devops-dozen-2023-community-award-winners/'>
+<h2>
+Jenkins wins DevOps Dozen award
+</h2>
+<p>
+Jenkins has been awarded the "Most innovative DevOps Open Source project" distinction by DevOps Dozen.
+</p>
+</a>
+<div>
+<a class='btn btn-primary' href='https://devopsdozen.com/devops-dozen-2023-community-award-winners/'>
+More info
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='carousel-item carousel_459' style='background: rgba(0,0,0,0);'>
+<div class='container'>
+<div class='row mt-5 mb-5'>
+<div class='col-md-12 col-lg-8 order-first order-lg-last'>
+<a href='https://contributors.jenkins.io/'>
+<img role='presentation' src='/images/logos/jenkins/jenkins.png' style='height: 285px;'>
+</a>
+</div>
+<div class='col-md-12 col-lg-4 order-last order-lg-first'>
+<a href='https://contributors.jenkins.io/'>
+<h2>
+Meet the driving forces
+</h2>
+<p>
+behind Jenkins as we showcase the top contributors shaping the future of continuous integration and delivery.
+</p>
+</a>
+<div>
+<a class='btn btn-primary' href='https://contributors.jenkins.io/'>
+More info
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='carousel-item carousel_459' style='background: rgba(0,0,0,0);'>
+<div class='container'>
+<div class='row mt-5 mb-5'>
+<div class='col-md-12 col-lg-8 order-first order-lg-last'>
+<a href='https://stories.jenkins.io/'>
+<img role='presentation' src='/images/post-images/jenkins-is-the-way/jenkins-is-the-way.png' style='height: 285px;'>
+</a>
+</div>
+<div class='col-md-12 col-lg-4 order-last order-lg-first'>
+<a href='https://stories.jenkins.io/'>
+<h2>
+Jenkins Stories!
+</h2>
+<p>
+We are looking for experiences of Jenkins users from around the world showcasing how they are building, deploying, and automating great software with Jenkins. Check out their user stories and share yours
+</p>
+</a>
+<div>
+<a class='btn btn-primary' href='https://stories.jenkins.io/'>
+More info
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='carousel-item carousel_459' style='background: rgba(0,0,0,0);'>
+<div class='container'>
+<div class='row mt-5 mb-5'>
+<div class='col-md-12 col-lg-8 order-first order-lg-last'>
+<a href='/participate/'>
+<img role='presentation' src='/images/logos/needs-you/Jenkins_Needs_You-transparent.png' style='height: 320px;'>
+</a>
+</div>
+<div class='col-md-12 col-lg-4 order-last order-lg-first'>
+<a href='/participate/'>
+<h2>
+Participate and Contribute!
+</h2>
+<p>
+Jenkins is a community-driven project. We invite everyone to join us and move it forward. Any contribution matters: code, documentation, localization, blog posts, artwork, meetups, and anything else. If you have five minutes or a few hours, you can help!
+</p>
+</a>
+<div>
+<a class='btn btn-primary' href='/participate/'>
+More info
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class='segment' id='feature-list-segment'>
+<div class='container'>
+<div class='row chunks features uniform-height'>
+<div class='col-md-6 col-lg-4'>
+<div class='box cicd'>
+<ion-icon name='git-pull-request-outline'></ion-icon>
+<h5>
+Continuous Integration and Continuous Delivery
+</h5>
+<p>
+As an extensible automation server, Jenkins can be used as a simple
+CI server or turned into the continuous delivery hub for any project.
+</p>
+</div>
+</div>
+<div class='col-md-6 col-lg-4'>
+<div class='box install'>
+<ion-icon name='download-outline'></ion-icon>
+<h5>
+Easy installation
+</h5>
+<p>
+Jenkins is a self-contained Java-based program, ready to run
+out-of-the-box, with packages for Windows, Linux, macOS and other
+Unix-like operating systems.
+</p>
+</div>
+</div>
+<div class='col-md-6 col-lg-4'>
+<div class='box settings'>
+<ion-icon name='options-outline'></ion-icon>
+<h5>
+Easy configuration
+</h5>
+<p>
+Jenkins can be easily set up and configured via its web interface,
+which includes on-the-fly error checks and built-in help.
+</p>
+</div>
+</div>
+<div class='col-md-6 col-lg-4'>
+<div class='box ecosystem'>
+<ion-icon name='apps-outline'></ion-icon>
+<h5>
+Plugins
+</h5>
+<p>
+With hundreds of plugins in the Update Center, Jenkins integrates
+with practically every tool in the continuous integration and
+continuous delivery toolchain.
+</p>
+</div>
+</div>
+<div class='col-md-6 col-lg-4'>
+<div class='box extend'>
+<ion-icon name='extension-puzzle-outline'></ion-icon>
+<h5>
+Extensible
+</h5>
+<p>
+Jenkins can be extended via its plugin architecture, providing
+nearly infinite possibilities for what Jenkins can do.
+</p>
+</div>
+</div>
+<div class='col-md-6 col-lg-4'>
+<div class='box distributed'>
+<ion-icon name='git-network-outline'></ion-icon>
+<h5>
+Distributed
+</h5>
+<p>
+Jenkins can easily distribute work across multiple machines,
+helping drive builds, tests and deployments across multiple
+platforms faster.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='container'>
+<div class='section'>
+<style>
+  .video_45 {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+  }
+  .video_45 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+</style>
+<div class='video video_45'>
+<iframe allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' frameborder='0' height='621' src='https://www.youtube.com/embed/_MXtbjwsz3A' width='1261'></iframe>
+</div>
+
+</div>
+</div>
+<div class='container'>
+<div class='section'>
+<h2 class='app-events__heading'>
+Recent posts
+</h2>
+<ul class='app-cards'>
+<li class='app-card'>
+<a href='/blog/2024/04/04/gsoc-2024-contributor-application-period-concludes/'>
+<div class='app-card__preview'>
+<img alt='The GSoC 2024 contributor application has ended. What happens next?' loading='lazy' onload='this.style.opacity = 1' src='/images/gsoc/opengraph.png'>
+</div>
+<h5 class='app-card__title'>
+The GSoC 2024 contributor application has ended. What happens next?
+</h5>
+<p class='app-card__teaser'>
+The Google Summer of Code 2024 contributor application period has ended and we are excited to have received over 75 valid applications from potential contributors, interested in contributing to Jenkins via this program.
+We are grateful to all the students who applied and look forward to reviewing their applications over the next few weeks.
+
+
+Between March 18, 2024, when the contributor application...
+</p>
+</a>
+<div class='app-card__details'>
+<div class='app-card__details__authors'>
+<a class="app-author-link" data-user-name="Kris Stern" href="/blog/authors/krisstern/"><div class="app-avatar"><img alt="Kris Stern" class="app-avatar__image" loading="lazy" onload="this.style.opacity = 1" src="/images/avatars/krisstern.png"></div><span>Kris Stern</span></a>
+April 4, 2024
+</div>
+</div>
+</li>
+<li class='app-card'>
+<a href='/blog/2024/02/28/jenkins-contributor-summit-and-fosdem-recap/'>
+<div class='app-card__preview'>
+<img alt='Jenkins Contributor Summit and FOSDEM Recap' loading='lazy' onload='this.style.opacity = 1' src='/images/post-images/2024/02/28/contributor-summit-group-photo.jpg'>
+</div>
+<h5 class='app-card__title'>
+Jenkins Contributor Summit and FOSDEM Recap
+</h5>
+<p class='app-card__teaser'>
+The previous in-person Jenkins Contributor Summit took place in 2020, just prior to the lockdowns and precautions that would change the world.
+Thankfully, on February 2, 2024, just prior to this year&#8217;s FOSDEM conference, we were able to gather again, in Brussels, so that we could have an in-person Jenkins Contributor Summit.
+
+
+The return to in-person meant that not only could we...
+</p>
+</a>
+<div class='app-card__details'>
+<div class='app-card__details__authors'>
+<a class="app-author-link" data-user-name="Kevin Martens" href="/blog/authors/kmartens27/"><div class="app-avatar"><img alt="Kevin Martens" class="app-avatar__image" loading="lazy" onload="this.style.opacity = 1" src="/images/avatars/kmartens27.jpeg"></div><span>Kevin Martens</span></a>
+February 28, 2024
+</div>
+</div>
+</li>
+<li class='app-card'>
+<a href='/blog/2024/02/23/gsoc2024-announcement/'>
+<div class='app-card__preview'>
+<img alt='Google Summer of Code 2024… Here We Come!' loading='lazy' onload='this.style.opacity = 1' src='/images/gsoc/2024/GSoC2024-here-we-come.png'>
+</div>
+<h5 class='app-card__title'>
+Google Summer of Code 2024… Here We Come!
+</h5>
+<p class='app-card__teaser'>
+We are thrilled to announce that Jenkins has been accepted to Google Summer of Code 2024!
+This will be Jenkins' eighth year as a mentoring organization.
+
+
+Congratulations to all 195 accepted open-source organizations!
+
+
+As a mentoring organization for the past seven years, Jenkins has mentored 35 GSoC students by 85+ different mentors, bringing together over 110 strangers for a common idea - Jenkins!
+
+
+At...
+</p>
+</a>
+<div class='app-card__details'>
+<div class='app-card__details__authors'>
+<a class="app-author-link" data-user-name="Alyssa Tong" href="/blog/authors/alyssat/"><div class="app-avatar"><img alt="Alyssa Tong" class="app-avatar__image" loading="lazy" onload="this.style.opacity = 1" src="/images/avatars/alyssat.jpg"></div><span>Alyssa Tong</span></a>
+February 23, 2024
+</div>
+</div>
+</li>
+<li class='app-card'>
+<a href='/blog/2024/01/29/nominate-someone-2024-jenkins-contributor-awards/'>
+<div class='app-card__preview'>
+<img alt='Nominate Someone – 2024 Jenkins Contributor Awards' loading='lazy' onload='this.style.opacity = 1' src='/images/post-images/2024/community_awards_2024_jenkins_nominate_1.png'>
+</div>
+<h5 class='app-card__title'>
+Nominate Someone – 2024 Jenkins Contributor Awards
+</h5>
+<p class='app-card__teaser'>
+Jenkins Contributor Awards for 2024 are being run by the Continuous Delivery Foundation (CDF) along with many other CDF Community Awards.
+
+
+The nominations are open and are being accepted using GitHub issues to make the process transparent.
+Any contributor is eligible!
+The deadline to nominate someone is February 19, 2024.
+Voting will open on February 22 and close on Friday, March 22.
+You can vote...
+</p>
+</a>
+<div class='app-card__details'>
+<div class='app-card__details__authors'>
+<a class="app-author-link" data-user-name="Alyssa Tong" href="/blog/authors/alyssat/"><div class="app-avatar"><img alt="Alyssa Tong" class="app-avatar__image" loading="lazy" onload="this.style.opacity = 1" src="/images/avatars/alyssat.jpg"></div><span>Alyssa Tong</span></a>
+January 29, 2024
+</div>
+</div>
+</li>
+<li class='app-card'>
+<a href='/blog/2024/01/25/sonar-vulnerability-report/'>
+<div class='app-card__preview'>
+<img alt='Collaboration is Key - Making the Open-Source Community Safer for Developers' loading='lazy' onload='this.style.opacity = 1' src='/images/post-images/2024/01/jenkins-and-sonar-security.png'>
+</div>
+<h5 class='app-card__title'>
+Collaboration is Key - Making the Open-Source Community Safer for Developers
+</h5>
+<p class='app-card__teaser'>
+Who is Sonar?
+
+
+Sonar is a code quality and security tool that helps developers write Clean Code.
+Sonar analyzes code for issues that lead to unreliable, unmaintainable, and insecure software at two points in the development lifecycle - first, when the developer initially writes code in the IDE with SonarLint and, again, as part of the Continuous Integration (CI) pipeline before the...
+</p>
+</a>
+<div class='app-card__details'>
+<div class='app-card__details__authors'>
+<a class="app-author-link" data-user-name="Yaniv Nizry" href="/blog/authors/yaniv-git/"><div class="app-avatar"><img alt="Yaniv Nizry" class="app-avatar__image" loading="lazy" onload="this.style.opacity = 1" src="/images/avatars/Yaniv-git.jpg"></div><span>Yaniv Nizry</span></a>
+January 25, 2024
+</div>
+</div>
+</li>
+<li class='app-card'>
+<a href='/blog/2024/01/25/jenkins-2023-recap/'>
+<div class='app-card__preview'>
+<img alt='Jenkins 2023 Recap' loading='lazy' onload='this.style.opacity = 1' src='/images/post-images/2024/01/25/image1.png'>
+</div>
+<h5 class='app-card__title'>
+Jenkins 2023 Recap
+</h5>
+<p class='app-card__teaser'>
+Contributed by: Wadeck Follonier
+
+
+The Jenkins Security team has multiple missions, with the most visible to users being the publication of advisories.
+
+
+In 2023, the team published 17 advisories: 4 included Jenkins core, and 13 were solely about plugins.
+In total, 211 vulnerabilities were announced.
+
+
+In terms of reporting trends, we have seen an increase in people reporting CVEs originating from dependencies.
+Our position on...
+</p>
+</a>
+<div class='app-card__details'>
+<div class='app-card__details__authors'>
+<a class="app-author-link" data-user-name="Damien DUPORTAL" href="/blog/authors/dduportal/"><div class="app-avatar"><img alt="Damien DUPORTAL" class="app-avatar__image" loading="lazy" onload="this.style.opacity = 1" src="/images/avatars/dduportal.jpg"></div><span>Damien DUPORTAL</span></a><a class="app-author-link" data-user-name="Mark Waite" href="/blog/authors/markewaite/"><div class="app-avatar"><img alt="Mark Waite" class="app-avatar__image" loading="lazy" onload="this.style.opacity = 1" src="/images/avatars/markewaite.jpg"></div><span>Mark Waite</span></a><a class="app-author-link" data-user-name="Bruno Verachten" href="/blog/authors/gounthar/"><div class="app-avatar"><img alt="Bruno Verachten" class="app-avatar__image" loading="lazy" onload="this.style.opacity = 1" src="/images/avatars/gounthar.png"></div><span>Bruno Verachten</span></a><a class="app-author-link" data-user-name="Wadeck Follonier" href="/blog/authors/wadeck/"><div class="app-avatar"><img alt="Wadeck Follonier" class="app-avatar__image" loading="lazy" onload="this.style.opacity = 1" src="/images/avatars/wadeck.jpg"></div><span>Wadeck Follonier</span></a><a class="app-author-link" data-user-name="Kevin Martens" href="/blog/authors/kmartens27/"><div class="app-avatar"><img alt="Kevin Martens" class="app-avatar__image" loading="lazy" onload="this.style.opacity = 1" src="/images/avatars/kmartens27.jpeg"></div><span>Kevin Martens</span></a><a class="app-author-link" data-user-name="Alyssa Tong" href="/blog/authors/alyssat/"><div class="app-avatar"><img alt="Alyssa Tong" class="app-avatar__image" loading="lazy" onload="this.style.opacity = 1" src="/images/avatars/alyssat.jpg"></div><span>Alyssa Tong</span></a>
+January 25, 2024
+</div>
+</div>
+</li>
+<li class='app-card'>
+<a href='/blog/2024/01/17/jenkins-contributor-summit-update/'>
+<div class='app-card__preview'>
+<img alt='2024 Jenkins Contributor Summit - Update' loading='lazy' onload='this.style.opacity = 1' src='/images/post-images/2023/11/ContribSummit/Contributor_summit_2024.png'>
+</div>
+<h5 class='app-card__title'>
+2024 Jenkins Contributor Summit - Update
+</h5>
+<p class='app-card__teaser'>
+The Jenkins Contributor Summit, being held in Brussels on February 2nd, is now quickly approaching.
+We are looking forward to meeting you.
+
+
+If you plan to join us and didn’t let us know yet, don’t forget to register by dropping us a note.
+The list of registered attendees can be found in this document: Contributor Summit 24 - Attendees.
+
+
+The Summit will take place...
+</p>
+</a>
+<div class='app-card__details'>
+<div class='app-card__details__authors'>
+<a class="app-author-link" data-user-name="Jean-Marc Meessen" href="/blog/authors/jmmeessen/"><div class="app-avatar"><img alt="Jean-Marc Meessen" class="app-avatar__image" loading="lazy" onload="this.style.opacity = 1" src="/images/avatars/jmMeessen.jpg"></div><span>Jean-Marc Meessen</span></a>
+January 17, 2024
+</div>
+</div>
+</li>
+<li class='app-card'>
+<a href='/blog/2023/12/15/jenkins-november-newsletter/'>
+<div class='app-card__preview'>
+<img alt='Jenkins November 2023 Newsletter' loading='lazy' onload='this.style.opacity = 1' src='/images/post-images/2023/02/07/2023-02-07-jenkins-newsletter/centered-newsletter.png'>
+</div>
+<h5 class='app-card__title'>
+Jenkins November 2023 Newsletter
+</h5>
+<p class='app-card__teaser'>
+Key Takeaways
+
+
+
+
+Basil Crow joins the Jenkins Governance Board.
+
+
+A Jenkins Contributor Summit will be held prior to FOSDEM.
+
+
+The Contributor Spotlight site is now live.
+
+
+
+
+
+
+
+Contributed by: Mark Waite
+
+
+Basil Crow joins the Jenkins governance board in December 2023.
+He’ll serve for a two-year term.
+Thanks to Basil for his willingness to serve.
+More details of the 2023 governance board and officer changes are available in a...
+</p>
+</a>
+<div class='app-card__details'>
+<div class='app-card__details__authors'>
+<a class="app-author-link" data-user-name="Damien DUPORTAL" href="/blog/authors/dduportal/"><div class="app-avatar"><img alt="Damien DUPORTAL" class="app-avatar__image" loading="lazy" onload="this.style.opacity = 1" src="/images/avatars/dduportal.jpg"></div><span>Damien DUPORTAL</span></a><a class="app-author-link" data-user-name="Mark Waite" href="/blog/authors/markewaite/"><div class="app-avatar"><img alt="Mark Waite" class="app-avatar__image" loading="lazy" onload="this.style.opacity = 1" src="/images/avatars/markewaite.jpg"></div><span>Mark Waite</span></a><a class="app-author-link" data-user-name="Bruno Verachten" href="/blog/authors/gounthar/"><div class="app-avatar"><img alt="Bruno Verachten" class="app-avatar__image" loading="lazy" onload="this.style.opacity = 1" src="/images/avatars/gounthar.png"></div><span>Bruno Verachten</span></a><a class="app-author-link" data-user-name="Kevin Martens" href="/blog/authors/kmartens27/"><div class="app-avatar"><img alt="Kevin Martens" class="app-avatar__image" loading="lazy" onload="this.style.opacity = 1" src="/images/avatars/kmartens27.jpeg"></div><span>Kevin Martens</span></a><a class="app-author-link" data-user-name="Alyssa Tong" href="/blog/authors/alyssat/"><div class="app-avatar"><img alt="Alyssa Tong" class="app-avatar__image" loading="lazy" onload="this.style.opacity = 1" src="/images/avatars/alyssat.jpg"></div><span>Alyssa Tong</span></a>
+December 15, 2023
+</div>
+</div>
+</li>
+<li class='app-card'>
+<a href='/blog/2023/12/08/basil-crow-board-announcement/'>
+<div class='app-card__preview'>
+<img alt='Welcome Basil Crow - new Jenkins Governance Board member' loading='lazy' onload='this.style.opacity = 1' src='/images/governance/elections/2023/2023-governance-board-changes.svg'>
+</div>
+<h5 class='app-card__title'>
+Welcome Basil Crow - new Jenkins Governance Board member
+</h5>
+<p class='app-card__teaser'>
+We would like to announce changes in the Jenkins Governance Board.
+There has been no election this year, because there was only one candidate per seat.
+Please welcome Basil Crow!
+At the same time, Oleg Nenashev retires from the board. We would like to thank Oleg for his contributions to the Jenkins project and the community.
+As a regular leader in GSoC, Jenkins Contributor...
+</p>
+</a>
+<div class='app-card__details'>
+<div class='app-card__details__authors'>
+<a class="app-author-link" data-user-name="Alexander Brandes" href="/blog/authors/notmyfault/"><div class="app-avatar"><img alt="Alexander Brandes" class="app-avatar__image" loading="lazy" onload="this.style.opacity = 1" src="/images/avatars/notmyfault.jpg"></div><span>Alexander Brandes</span></a>
+December 8, 2023
+</div>
+</div>
+</li>
+<script>
+  $(document).ready(function() {
+      document.querySelectorAll(".app-card__details__authors").forEach(authors => {
+        if (authors.offsetHeight > 30) {
+          authors.classList.add("app-card__details__authors--compact")
+        }
+      })
+      document.querySelector(".app-cards").style.opacity = 1;
+  });
+</script>
+</ul>
+
+
+</div>
+</div>
+<div class='jumbotron' id='sponsorsblock'>
+<div class='sponsors'>
+<p>
+<strong>
+We thank the following organizations for their major commitments to
+support the Jenkins project.
+</strong>
+</p>
+<ul>
+<li>
+<a href='https://cloudbees.com' rel='noreferrer noopener' target='_blank'>
+<img alt='CloudBees, Inc.' src='/images/sponsors/cloudbees.png' title='CloudBees, Inc.'>
+</a>
+</li>
+<li>
+<a href='https://osuosl.org' rel='noreferrer noopener' target='_blank'>
+<img alt='Oregon State University Open Source Lab' src='/images/sponsors/osuosl.png' title='Oregon State University Open Source Lab'>
+</a>
+</li>
+<li>
+<a href='https://cd.foundation/' rel='noreferrer noopener' target='_blank'>
+<img alt='Continuous Delivery Foundation' src='/images/sponsors/cdf.png' title='Continuous Delivery Foundation'>
+</a>
+</li>
+<li>
+<a href='https://aws.amazon.com/' rel='noreferrer noopener' target='_blank'>
+<img alt='AWS' src='/images/sponsors/aws.png' title='AWS'>
+</a>
+</li>
+<li>
+<a href='https://github.com' rel='noreferrer noopener' target='_blank'>
+<img alt='GitHub, Inc.' src='/images/sponsors/github.png' title='GitHub, Inc.'>
+</a>
+</li>
+<li>
+<a href='https://jfrog.com' rel='noreferrer noopener' target='_blank'>
+<img alt='JFrog' src='/images/sponsors/jfrog.png' title='JFrog'>
+</a>
+</li>
+</ul>
+</div>
+<div class='supporters'>
+<p>
+<strong>
+We thank the following organizations for their support of the Jenkins
+project through free and/or open source licensing programs.
+</strong>
+</p>
+<ul>
+<li>
+<a href='https://atlassian.com' rel='noreferrer noopener' target='_blank'>Atlassian</a>
+</li>
+<li>
+<a href='https://www.datadoghq.com' rel='noreferrer noopener' target='_blank'>Datadog</a>
+</li>
+<li>
+<a href='https://www.digitalocean.com/' rel='noreferrer noopener' target='_blank'>DigitalOcean</a>
+</li>
+<li>
+<a href='https://www.discourse.org/' rel='noreferrer noopener' target='_blank'>Discourse</a>
+</li>
+<li>
+<a href='https://www.fastly.com' rel='noreferrer noopener' target='_blank'>Fastly</a>
+</li>
+<li>
+<a href='https://www.ibm.com' rel='noreferrer noopener' target='_blank'>IBM</a>
+</li>
+<li>
+<a href='https://www.netlify.com/' rel='noreferrer noopener' target='_blank'>Netlify</a>
+</li>
+<li>
+<a href='https://pagerduty.com' rel='noreferrer noopener' target='_blank'>PagerDuty</a>
+</li>
+<li>
+<a href='https://sentry.io' rel='noreferrer noopener' target='_blank'>Sentry</a>
+</li>
+<li>
+<a href='https://www.tsinghua.edu.cn' rel='noreferrer noopener' target='_blank'>Tsinghua University</a>
+</li>
+<li>
+<a href='https://xmission.com' rel='noreferrer noopener' target='_blank'>XMission</a>
+</li>
+</ul>
+</div>
+</div>
+
+
+<script src='/assets/bower/anchor-js/anchor.min.js'></script>
+<script src='/assets/bower/@popperjs/core/umd/popper.min.js'></script>
+<script src='/assets/bower/bootstrap/js/bootstrap.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/lit@3.1.2/polyfill-support.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2.8.0/webcomponents-loader.js'></script>
+<script data='ionicons' defer='' src='https://cdnjs.cloudflare.com/ajax/libs/ionicons/7.3.1/ionicons/ionicons.esm.js' type='module'></script>
+<script data='ionicons' defer='' nomodule='' src='https://cdnjs.cloudflare.com/ajax/libs/ionicons/7.3.1/ionicons/ionicons.js'></script>
+<script defer='' src='https://cdn.jsdelivr.net/npm/@jenkinsci/jenkins-io-components/+esm' type='module'></script>
+<script defer='' nomodule='' src='https://cdn.jsdelivr.net/npm/@jenkinsci/jenkins-io-components/'></script>
+<jio-footer githubBranch='master' githubRepo='jenkins-infra/jenkins.io' property='https://www.jenkins.io' reportAProblemTemplate='4-bug.yml' sourcePath='content/index.html.haml'></jio-footer>
+<script>
+  $(function(){
+    var $body = $(document.body);
+    $body.on("keydown", function(){
+      $body.removeClass("no-outline");
+    })
+  })
+</script>
+</body>
+</html>
